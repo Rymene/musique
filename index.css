@@ -1,0 +1,434 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 2000px;
+    margin: 0;
+    padding: 0;
+    font-family: "Cormorant Garamond", serif;
+    position: relative; /* Ajoute une position relative au body */  
+}
+
+body::-webkit-scrollbar {
+    width: 12px; /* Largeur de la barre de défilement */
+    background-color: rgb(183, 172, 161, 0.50);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(183, 172, 161); /* Couleur de la poignée de la barre de défilement */
+    border: 2px solid #f1f1f1f1;
+    border-radius: 10px; /* Coins arrondis de la poignée */
+}
+
+.cormorant-garamond-regular {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: -1; /* Assure que le conteneur de fond est en arrière-plan */
+}
+
+.background-image {
+    opacity: 75%;
+    width: 100%;
+    height: 900px;
+    object-fit: cover; /* Ajuste la taille de l'image pour couvrir le conteneur sans déformation */
+}
+
+/* Le reste de ton code CSS reste inchangé */
+
+#left-box > h1 {
+    color: white
+}
+
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(183, 172, 161);
+    color: #f1f1f1f1;
+    min-height: 300px;
+    border-radius: 0 0 15px 15px;
+}
+
+#left-box {
+    width: 50%;
+    text-align: center;
+    padding: 10px 50px 10px 50px;
+    font-size: 2rem;
+    color: #f1f1f1f1;
+    align-items: center;
+}
+
+#under-title {
+    border: 1px solid #f1f1f1f1;
+}
+
+#song1:hover {
+    color: red;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 1); /* Ombre légère lors du survol */
+    transition-duration: 0.5s;
+    font-weight: 500;
+}
+
+#song2:hover {
+    color: gray;
+    text-shadow: 0 0 10px rgba(128, 128, 128, 1); /* Ombre légère lors du survol */
+    transition-duration: 0.5s;
+    font-weight: 500;
+}
+
+#song3:hover {
+    color: rgb(231, 91, 161);
+    text-shadow: 0 0 10px rgba(231, 91, 161, 1); /* Ombre légère lors du survol */
+    transition-duration: 0.5s;
+    font-weight: 500;
+}
+
+#forumbtn:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1); /* Ombre légère lors du survol */
+    transition-duration: 0.5s;
+}
+
+#song1, #song2, #song3, #forumbtn {
+    color: #f1f1f1f1;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (min-width:950px) {
+    #song-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    #presentation-title {
+        color: #f1f1f1f1;
+        text-align: center;
+        font-size: 1.8rem;
+        padding: 10px;
+        margin: 40px 15% 70px 15%;
+        border: solid 2px white;
+        background-color: rgb(183, 172, 161);
+        border-radius: 20px;
+    }
+    #left-box {
+        width: 50%;
+        text-align: center;
+        padding: 10px 50px 0 50px;
+        font-size: 1.6rem;
+        color: #f1f1f1f1;
+        align-items: center;
+    }
+}
+@media screen and (min-width:450px) {
+    #presentation-title {
+        color: #f1f1f1f1;
+        text-align: center;
+        font-size: 3rem;
+        padding: 10px;
+        margin: 40px 15% 70px 15%;
+        border: solid 2px white;
+        background-color: rgb(183, 172, 161);
+        border-radius: 20px;
+    }
+}
+
+#presentation {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#goosebumps {
+    display: flex;
+    background-color: rgb(204, 104, 104, 0.85);
+    min-height: 500px;
+    width: 425px;
+    border-radius: 20px;
+    align-content: space-around;
+    flex-direction: column;
+    margin: 0 30px 40px 30px;
+}
+
+p {
+    margin: 25px;
+    color: #f1f1f1f1;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+#symphonie {
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.850);
+    min-height: 500px;
+    width: 425px;
+    border-radius: 20px;
+    margin: 0 30px 40px 30px;
+    flex-direction: column;
+}
+
+#regrette {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(198, 146, 148, 0.850);
+    min-height: 500px;
+    width: 425px;
+    border-radius: 20px;
+    margin: 0 30px 40px 30px
+}
+
+#line1 {
+    display: flex;
+    background-color: rgb(204, 104, 104);
+    width: 100%;
+    height: 40px;
+    color: #f1f1f1f1;
+    font-size: 1.7rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#line2 {
+    display: flex;
+    background-color: gray;
+    width: 100%;
+    height: 40px;
+    color: #f1f1f1f1;
+    font-size: 1.7rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#line3 {
+    display: flex;
+    background-color: rgb(198, 146, 148);
+    width: 100%;
+    height: 40px;
+    color: #f1f1f1f1;
+    font-size: 1.7rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#forum {
+    margin: 150px 30px 50px 30px;
+    background-color: rgb(183, 172, 161, 0.50);
+    height: 600px;
+    border-radius: 20px;
+}
+
+#line-forum {
+    background-color: rgb(183, 172, 161);
+    width: 100%;
+    height: 40px;
+}
+
+#chat-container {
+    width: 100%;
+    margin: auto;
+    overflow: auto; /* Ajout de la propriété overflow-y: auto; */
+    border-radius: 10px;
+    text-align: left;
+    height: 559px; /* Vous pouvez ajuster cette valeur selon vos besoins */
+}
+
+#chat-container::-webkit-scrollbar {
+    width: 12px; /* Largeur de la barre de défilement */
+}
+
+#chat-container::-webkit-scrollbar-thumb {
+    background-color: rgb(183, 172, 161); /* Couleur de la poignée de la barre de défilement */
+    border: 2px solid #f1f1f1f1;
+    border-radius: 10px; /* Coins arrondis de la poignée */
+}
+
+.message {
+    display: flex;
+    align-items: flex-start;
+    margin: 40px;
+    justify-content: flex-start;
+}
+
+.profile-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.user1 { color: black; }
+.user1 .profile-circle { 
+    background-image: url(wanis.jpg); 
+    background-size: 110% 110%;
+    background-repeat: no-repeat;
+}
+
+.user2 { color: black; }
+.user2 .profile-circle { 
+    background-image: url(adonis.jpg); 
+    background-size: 110% 110%;
+    background-repeat: no-repeat;
+}
+
+.user3 { color: black; }
+.user3 .profile-circle { 
+    background-image: url(rymene.png); 
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.typing-indicator {
+    width: 10px;
+    height: 10px;
+    background-color: #f1f1f1f1;
+    border-radius: 50%;
+    margin-right: 5px;
+    animation: typing-animation 1s infinite;
+}
+
+.dot1 { animation-delay: 0.1s; }
+.dot2 { animation-delay: 0.2s; }
+.dot3 { animation-delay: 0.3s; }
+
+@keyframes typing-animation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+}
+
+.message-text {
+    display: none;
+    background-color: white; /* Couleur de fond du texte */
+    padding: 8px; /* Espace autour du texte */
+    border-radius: 5px; /* Coins arrondis */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    white-space: pre-wrap;
+}
+
+#line-forum {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#simulate-button, #replay-button {
+    transition: opacity 0.5s ease-in-out; /* Ajout de la transition pour l'opacité */
+}
+
+#replay-button {
+    display: none;
+    background-color: #f1f1f1f1; /* Couleur de fond lors du survol */
+    color: rgb(183, 172, 161); /* Couleur du texte lors du survol */
+    border: solid 2px #f1f1f1f1;
+    padding: 7px 17px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#simulate-button {
+    background-color: #f1f1f1f1; /* Couleur de fond lors du survol */
+    color: rgb(183, 172, 161); /* Couleur du texte lors du survol */
+    border: solid 2px #f1f1f1f1;
+    padding: 7px 17px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#replay-button:hover {
+    background-color: rgb(183, 172, 161);
+    color: #f1f1f1f1;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Ombre légère lors du survol */
+    transition-duration: 0.7s;
+}
+
+#simulate-button:hover {
+    background-color: rgb(183, 172, 161);
+    color: #f1f1f1f1;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Ombre légère lors du survol */
+    transition-duration: 0.7s;
+}
+
+#scrollToTopButton {
+    display: block;
+    z-index: 99;
+    transition: opacity 0.5s, visibility 0.5s, transform 2s; /* Ajouter la transition de la rotation */
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    border: none;
+    border-radius: 40px;
+    outline: none;
+    width: 60px;
+    height: 60px;
+    background-image: url(arrow.png);
+    background-size: contain;
+    background-color: transparent;
+}
+
+#scrollToTopButton.rotate {
+    transform: rotate(360deg);
+}
+
+#scrollToTopButton:hover{
+    cursor: pointer;
+}
+
+@media screen and (min-width:555px) {
+    footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 300px;
+        bottom: 0;
+        background-color: rgb(183, 172, 161);
+        font-size: 1.8rem;
+        color: #f1f1f1f1;
+        border-radius: 15px 15px 0 0;
+    }
+}
+
+@media screen and (max-width:555px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 300px;
+        bottom: 0;
+        background-color: rgb(183, 172, 161);
+        font-size: 1.8rem;
+        color: #f1f1f1f1;
+        border-radius: 15px 15px 0 0;
+    }
+
+    #name1, #name2, #name3 {
+        margin-bottom: 10px;
+    }
+
+}

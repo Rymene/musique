@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+    <script src="index.js"></script>
+    <title>TuneCompare</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="left-box">
+            <h1>TuneCompare</h1>
+
+            <hr id="under-title">
+
+            <div id="song-container">
+                <div><a href="#line2" id="song2">Beethoven</a></div>
+                <div><a href="#line1" id="song1">Travis Scott</a></div>
+                <div><a href="#line3" id="song3">Edith Piaf</a></div>
+                <div><a href="#line-forum" id="forumbtn">Forum</a></div>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="background-container">
+        <img class="background-image" src="music-book.jpg" alt="Image de fond">
+    </div>
+
+    <h2 id="presentation-title">Présentation des artistes</h2>
+
+    <div id="presentation">
+        <div id="symphonie">
+            <div id="line2"><strong>Beethoven</strong></div>
+            <p><strong>Ludwig Van Beethoven</strong> est un compositeur et pianiste allemand né à Bonn le 15 décembre 1770 et mort le 26
+                mars 1827 d’une cirrhose à Vienne. Il est considéré par beaucoup comme le meilleur compositeur de
+                l’histoire ou le plus populaire. Il a notamment composé la <em>Lettre à Elise</em> et <em>l’Ode à la joie</em>. Il a
+                adopté un style classique au début de sa carrière, comme <strong>Wolfgang Amadeus Mozart</strong>, puis il s’est
+                spécialisé dans le romantisme.</p>
+        </div>
+        <div id="goosebumps">
+            <div id="line1"><strong>Travis Scott</strong></div>
+            <p><strong>Travis Scott</strong> (de son vrai nom Jacques Bermont Webster II) est un rappeur Américain né en
+                1991 à Houston.
+                C’est l'un
+                des rappeurs les plus populaires du 21e siècle, ayant quatre hits #1 au Billboard 100 et a été nominé
+                pour 10 Grammy Awards, aux Etats-Unis, il a vendu 49 millions de disques. Il a notamment créé son propre
+                label en 2017, <strong>Cactus Jack</strong>, où il a signé de nombreux rappeurs populaires comme
+                <strong>Don Toliver</strong> ou <strong>Sheck
+                    Wes</strong>. </p>
+        </div>
+        <div id="regrette">
+            <div id="line3"><strong>Edith Piaf</strong></div>
+            <p><strong>Edith Piaf</strong> est une chanteuse née le 19 décembre 1915 et morte le 10 octobre 1963 à 47
+                ans d’une
+                hémorragie interne à cause de son addiction à l’alcool et à la morphine. Elle est à l'origine de
+                plusieurs succès devenus des classiques comme <em>La Vie en rose</em>, <em>Non, je ne regrette
+                    rien</em>, <em>Hymne à l'amour</em>,
+                <em>Mon légionnaire</em>, <em>La Foule, Milord</em>, <em>Mon Dieu</em> ou encore
+                <em>L'Accordéoniste</em>. Elle a inspiré de nombreux
+                chanteurs tel que <strong>Charles Aznavour</strong>.
+            </p>
+        </div>
+
+    </div>
+
+
+    <section id="forum">
+        <div id="line-forum">
+            <button id="simulate-button" onclick="startChatSimulation()">Lancer la discussion</button>
+            <button id="replay-button" onclick="restartChatSimulation()">Revoir</button>
+        </div>
+        <div id="chat-container"></div>
+    </section>
+
+    <footer>
+        <div id="name1">Adam El Fatmi</div>
+        <div id="name2">Adonis Amor</div>
+        <div id="name3">Rymène Khaldi</div>
+    </footer>
+
+    <!-- Scroll To Top -->
+    <button onclick="topFunction()" id="scrollToTopButton" title="Haut de page"></button>
+</body>
+
+</html>
